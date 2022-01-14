@@ -278,9 +278,13 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, number) {
+  array.splice(number, 1);
+  return array.length;
 }
+
+//console.log(artists.length);
+//console.log(removeArtist(artists, 16));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -299,11 +303,22 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push({
+    id: 20,
+    name: 'Mike Ferrete', 
+    years: '1988 - 2022',
+    genre: 'Web Design', 
+    nationality: 'American',
+    bio: 'Board game lover and aspiring web developer'
+  });
+
+  return array;
 }
 
-
+// console.log(artists.length);
+// console.log(addArtist(artists));
+// console.log(artists.length);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
